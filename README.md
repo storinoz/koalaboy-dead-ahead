@@ -4,9 +4,16 @@ Versão web da planilha de recomendações de itens e builds para os 52 personag
 
 ## Acessar o site
 
-Após a publicação pelo GitHub Pages, o endereço será:
+Endereço publicado pelo GitHub Pages:
 
-`https://storinoz.github.io/dead-ahead/`
+`https://storinoz.github.io/koalaboy-dead-ahead/`
+
+## Repositórios
+
+- Principal: [storinoz/DeadAheadByKoalaBoy](https://github.com/storinoz/DeadAheadByKoalaBoy), onde o projeto é mantido.
+- Publicação: [storinoz/koalaboy-dead-ahead](https://github.com/storinoz/koalaboy-dead-ahead), que fornece o endereço do site.
+
+Os dois repositórios recebem a mesma branch `main`, preservando os arquivos e o histórico. O GitHub Pages deve ficar habilitado somente no repositório de publicação, usando `main` e a raiz `/`.
 
 ## Conteúdo
 
@@ -64,7 +71,16 @@ git commit -m "Descreva a alteração"
 git push
 ```
 
-O GitHub Pages atualizará o site após o envio para a branch `main`.
+Nesta pasta local, `origin` busca o repositório principal e possui dois destinos de envio. Assim, `git push origin main` atualiza tanto o principal quanto o de publicação, e o GitHub Pages publica o site.
+
+Para conferir os destinos, execute `git remote -v`. Ao clonar o repositório principal em outro computador, configure os dois destinos de envio uma vez:
+
+```powershell
+git remote set-url --add --push origin https://github.com/storinoz/DeadAheadByKoalaBoy.git
+git remote set-url --add --push origin https://github.com/storinoz/koalaboy-dead-ahead.git
+```
+
+Alterações feitas diretamente pelo navegador no repositório principal não são publicadas automaticamente no outro repositório. Nesse caso, execute `git pull` e depois `git push origin main` nesta pasta. Confira no resultado do envio se ambos os destinos foram atualizados; se um envio falhar, corrija a falha e execute o comando novamente.
 
 ## Nota
 
