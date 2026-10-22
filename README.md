@@ -8,12 +8,11 @@ Endereço publicado pelo GitHub Pages:
 
 `https://storinoz.github.io/koalaboy-dead-ahead/`
 
-## Repositórios
+## Repositório
 
-- Principal: [storinoz/DeadAheadByKoalaBoy](https://github.com/storinoz/DeadAheadByKoalaBoy), onde o projeto é mantido.
-- Publicação: [storinoz/koalaboy-dead-ahead](https://github.com/storinoz/koalaboy-dead-ahead), que fornece o endereço do site.
+[storinoz/koalaboy-dead-ahead](https://github.com/storinoz/koalaboy-dead-ahead) reúne o código, o histórico e a publicação do site em um único repositório.
 
-Os dois repositórios recebem a mesma branch `main`, preservando os arquivos e o histórico. O GitHub Pages deve ficar habilitado somente no repositório de publicação, usando `main` e a raiz `/`.
+O GitHub Pages publica a branch `main`, usando a raiz `/`. Não é necessário sincronizar outro repositório.
 
 ## Conteúdo
 
@@ -71,16 +70,9 @@ git commit -m "Descreva a alteração"
 git push
 ```
 
-Nesta pasta local, `origin` busca o repositório principal e possui dois destinos de envio. Assim, `git push origin main` atualiza tanto o principal quanto o de publicação, e o GitHub Pages publica o site.
+O remoto `origin` aponta somente para `https://github.com/storinoz/koalaboy-dead-ahead.git`, tanto para buscar quanto para enviar alterações.
 
-Para conferir os destinos, execute `git remote -v`. Ao clonar o repositório principal em outro computador, configure os dois destinos de envio uma vez:
-
-```powershell
-git remote set-url --add --push origin https://github.com/storinoz/DeadAheadByKoalaBoy.git
-git remote set-url --add --push origin https://github.com/storinoz/koalaboy-dead-ahead.git
-```
-
-Alterações feitas diretamente pelo navegador no repositório principal não são publicadas automaticamente no outro repositório. Nesse caso, execute `git pull` e depois `git push origin main` nesta pasta. Confira no resultado do envio se ambos os destinos foram atualizados; se um envio falhar, corrija a falha e execute o comando novamente.
+Após `git push origin main`, o GitHub Pages atualiza o site. Alterações salvas diretamente na branch `main` pelo navegador também disparam a publicação. Para conferir o endereço remoto, execute `git remote -v`.
 
 ## Nota
 

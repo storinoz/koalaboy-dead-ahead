@@ -45,4 +45,4 @@ Este repositório contém o site estático publicado no GitHub Pages a partir da
 
 ## Publicação
 
-O GitHub Pages deve publicar a branch `main` a partir da raiz `/`. Não há etapa de compilação.
+O repositório único é `storinoz/koalaboy-dead-ahead`: nele ficam código, histórico e publicação. `origin` deve apontar somente para esse repositório, sem destinos extras de envio. O GitHub Pages deve publicar a branch `main` a partir da raiz `/`, em `https://storinoz.github.io/koalaboy-dead-ahead/`. Não há etapa de compilação.
