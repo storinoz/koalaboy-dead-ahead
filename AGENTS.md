@@ -2,6 +2,10 @@
 
 Este repositório contém o site estático publicado no GitHub Pages a partir da planilha `Planilha_completa_builds rev02.xlsx`.
 
+Repositório único: [storinoz/koalaboy-dead-ahead](https://github.com/storinoz/koalaboy-dead-ahead).
+
+Site público: [storinoz.github.io/koalaboy-dead-ahead](https://storinoz.github.io/koalaboy-dead-ahead/).
+
 ## Arquivos canônicos
 
 - `data/personagens.json`: dados exibidos pelo site, com 52 personagens e 156 builds.
@@ -46,3 +50,5 @@ Este repositório contém o site estático publicado no GitHub Pages a partir da
 ## Publicação
 
 O repositório único é `storinoz/koalaboy-dead-ahead`: nele ficam código, histórico e publicação. `origin` deve apontar somente para esse repositório, sem destinos extras de envio. O GitHub Pages deve publicar a branch `main` a partir da raiz `/`, em `https://storinoz.github.io/koalaboy-dead-ahead/`. Não há etapa de compilação.
+
+A consolidação está concluída e o repositório duplicado foi excluído. Não recrie repositórios de espelhamento ou publicação separados. Envie as alterações com `git push origin main`; confira que `git remote -v` mostre apenas o repositório único para busca e envio.

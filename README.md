@@ -1,4 +1,4 @@
-# Dead Ahead — Guia de builds
+# Dead Ahead Zombie Warfare Guide by KoalaBoy
 
 Versão web da planilha de recomendações de itens e builds para os 52 personagens jogáveis de **Dead Ahead: Zombie Warfare**.
 
@@ -6,13 +6,15 @@ Versão web da planilha de recomendações de itens e builds para os 52 personag
 
 Endereço publicado pelo GitHub Pages:
 
-`https://storinoz.github.io/koalaboy-dead-ahead/`
+[storinoz.github.io/koalaboy-dead-ahead](https://storinoz.github.io/koalaboy-dead-ahead/)
 
 ## Repositório
 
 [storinoz/koalaboy-dead-ahead](https://github.com/storinoz/koalaboy-dead-ahead) reúne o código, o histórico e a publicação do site em um único repositório.
 
 O GitHub Pages publica a branch `main`, usando a raiz `/`. Não é necessário sincronizar outro repositório.
+
+A consolidação foi concluída: o repositório duplicado foi excluído. Todo o trabalho deve continuar neste repositório único, sem espelhamento ou destinos adicionais de envio.
 
 ## Conteúdo
 
@@ -67,7 +69,7 @@ Depois das alterações:
 ```powershell
 git add .
 git commit -m "Descreva a alteração"
-git push
+git push origin main
 ```
 
 O remoto `origin` aponta somente para `https://github.com/storinoz/koalaboy-dead-ahead.git`, tanto para buscar quanto para enviar alterações.
