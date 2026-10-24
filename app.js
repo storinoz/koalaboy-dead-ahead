@@ -3,6 +3,7 @@ const state = {
   itemAssets: null,
   unitAssets: null,
   unitProfiles: null,
+  unitCosts: null,
   teamAssets: null,
   characterIndex: 0,
   buildIndex: 0,
@@ -29,6 +30,9 @@ const elements = {
   teamTooltip: document.querySelector("#teamTooltip"),
   classIcon: document.querySelector("#classIcon"),
   className: document.querySelector("#className"),
+  unitCost: document.querySelector("#unitCost"),
+  costIcon: document.querySelector("#costIcon"),
+  costAmount: document.querySelector("#costAmount"),
   perkList: document.querySelector("#perkList"),
   unitTagline: document.querySelector("#unitTagline"),
   unitSummary: document.querySelector("#unitSummary"),
@@ -244,6 +248,21 @@ function renderUnitProfile(character) {
   elements.classIcon.src = profile.classIcon;
   elements.classIcon.alt = `${profile.class} class shield`;
   elements.className.textContent = profile.class;
+  const cost = state.unitCosts?.units[character.name];
+  const resource = cost && state.unitCosts.resources[cost.resource];
+  elements.unitCost.hidden = !resource;
+  if (resource) {
+    const description = `Base deployment cost: ${cost.amount} ${resource.name}. Before item and team reductions.`;
+    elements.unitCost.dataset.resource = cost.resource;
+    elements.unitCost.title = description;
+    elements.unitCost.setAttribute("aria-label", description);
+    elements.costIcon.src = resource.image;
+    elements.costIcon.alt = resource.name;
+    elements.costAmount.textContent = cost.amount;
+  } else {
+    elements.costIcon.removeAttribute("src");
+    elements.costAmount.textContent = "";
+  }
   elements.unitTagline.textContent = profile.tagline;
   elements.unitSummary.textContent = profile.summary;
   elements.perkList.innerHTML = profile.perks.length
@@ -397,11 +416,12 @@ async function init() {
       fetch("data/unit-assets.json?v=8"),
       fetch("data/unit-profiles.json?v=8"),
       fetch("data/team-assets.json?v=8"),
+      fetch("data/unit-costs.json?v=14"),
     ]);
     if (responses.some((response) => !response.ok)) {
       throw new Error(`HTTP failure ${responses.map((response) => response.status).join("/")}`);
     }
-    [state.data, state.itemAssets, state.unitAssets, state.unitProfiles, state.teamAssets] = await Promise.all(responses.map((response) => response.json()));
+    [state.data, state.itemAssets, state.unitAssets, state.unitProfiles, state.teamAssets, state.unitCosts] = await Promise.all(responses.map((response) => response.json()));
 
     applyTheme(document.documentElement.dataset.theme, false);
     buildCharacterControls();

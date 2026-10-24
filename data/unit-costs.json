@@ -1,0 +1,280 @@
+{
+  "verifiedOn": "2026-10-24",
+  "note": "Base deployment costs before item, team, or other in-battle reductions. Skins do not change the base cost.",
+  "resources": {
+    "courage": {
+      "name": "Courage",
+      "image": "assets/resources/courage.png",
+      "source": "https://deadahead.wiki.gg/wiki/Courage",
+      "sourceImage": "https://deadahead.wiki.gg/images/Courage_Icon.png?741d64"
+    },
+    "rage": {
+      "name": "Rage",
+      "image": "assets/resources/rage.png",
+      "source": "https://deadahead.wiki.gg/wiki/Rage",
+      "sourceImage": "https://deadahead.wiki.gg/images/Rage_Icon.png?afb9bc"
+    }
+  },
+  "units": {
+    "Agents": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Agents"
+    },
+    "Andrea": {
+      "amount": 25,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Andrea"
+    },
+    "Austin": {
+      "amount": 30,
+      "resource": "rage",
+      "source": "https://deadahead.wiki.gg/wiki/Austin"
+    },
+    "Berserker": {
+      "amount": 13,
+      "resource": "rage",
+      "source": "https://deadahead.wiki.gg/wiki/Berserker"
+    },
+    "Builder": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Builder"
+    },
+    "Builder Abby": {
+      "amount": 40,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Builder_Abby"
+    },
+    "Cap": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Cap"
+    },
+    "Carlos": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Carlos"
+    },
+    "Carol": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Carol"
+    },
+    "Cashier": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Cashier"
+    },
+    "Chopper": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Chopper"
+    },
+    "Demolitionist": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Demolitionist"
+    },
+    "Dr. Kane": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Dr._Kane"
+    },
+    "Dr. Miller": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Dr._Miller"
+    },
+    "Dr. Norman": {
+      "amount": 25,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Dr._Norman"
+    },
+    "Farmer": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Farmer"
+    },
+    "Firefighter": {
+      "amount": 25,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Firefighter"
+    },
+    "Flamethrower": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Flamethrower"
+    },
+    "Glenn": {
+      "amount": 25,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Glenn"
+    },
+    "Grenadier": {
+      "amount": 25,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Grenadier"
+    },
+    "Guard": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Guard"
+    },
+    "Gunslinger": {
+      "amount": 15,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Gunslinger"
+    },
+    "Haruko": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Haruko"
+    },
+    "Hero": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Hero"
+    },
+    "Jailer": {
+      "amount": 15,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Jailer"
+    },
+    "Juggernaut": {
+      "amount": 35,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Juggernaut"
+    },
+    "Lester": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Lester"
+    },
+    "Light Soldier": {
+      "amount": 25,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Light_Soldier"
+    },
+    "Lionheart": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Lionheart"
+    },
+    "Maria": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Maria"
+    },
+    "Mechanic": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Mechanic"
+    },
+    "Medic": {
+      "amount": 35,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Medic"
+    },
+    "Paramedic Nancy": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Paramedic_Nancy"
+    },
+    "Pepper": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Pepper"
+    },
+    "Policeman Diaz": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Policeman_Diaz"
+    },
+    "Private Rodriguez": {
+      "amount": 15,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Private_Rodriguez"
+    },
+    "Queen": {
+      "amount": 25,
+      "resource": "rage",
+      "source": "https://deadahead.wiki.gg/wiki/Queen"
+    },
+    "Ranger": {
+      "amount": 25,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Ranger"
+    },
+    "Red Hood": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Red_Hood"
+    },
+    "Redneck": {
+      "amount": 15,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Redneck"
+    },
+    "Rogue": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Rogue"
+    },
+    "Sarah": {
+      "amount": 20,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Sarah"
+    },
+    "Saw": {
+      "amount": 13,
+      "resource": "rage",
+      "source": "https://deadahead.wiki.gg/wiki/Saw"
+    },
+    "Sheriff Charlotte": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Sheriff_Charlotte"
+    },
+    "Sniper Polina": {
+      "amount": 25,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Sniper_Polina"
+    },
+    "Soldier": {
+      "amount": 35,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Soldier"
+    },
+    "Sonya": {
+      "amount": 25,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Sonya"
+    },
+    "SpecOps": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/SpecOps"
+    },
+    "Swat": {
+      "amount": 30,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Swat"
+    },
+    "Turbo": {
+      "amount": 25,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Turbo"
+    },
+    "Welder": {
+      "amount": 50,
+      "resource": "rage",
+      "source": "https://deadahead.wiki.gg/wiki/Welder"
+    },
+    "Willy": {
+      "amount": 35,
+      "resource": "courage",
+      "source": "https://deadahead.wiki.gg/wiki/Willy"
+    }
+  }
+}

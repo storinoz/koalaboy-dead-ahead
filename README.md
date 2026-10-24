@@ -28,6 +28,7 @@ A consolidação foi concluída: o repositório duplicado foi excluído. Todo o 
 - Emblema do Team de cada skin, com balão dos bônus de 2, 3 e 5 unidades, acessível por mouse, teclado e toque.
 - Busca por nome do personagem ou de qualquer skin, sempre abrindo a unidade principal.
 - Interface integralmente em inglês, com classe, vantagens, balões explicativos e resumo de cada unidade.
+- Custo-base de envio de cada unidade, com o garrafão azul de Courage ou o ícone de Rage, conforme usado no jogo. Valores anteriores a reduções por itens e Teams; skins mantêm o custo da unidade.
 - Perfil compacto à esquerda e informações da unidade/build à direita; itens em grade 2×2 (Cup, Watch / Knife, Book) e critérios em largura total. Layout empilhado no celular.
 - Alternância entre os modos claro e escuro, com a preferência mantida nas próximas visitas.
 - Busca rápida, navegação entre personagens e links compartilháveis.
@@ -42,18 +43,22 @@ A consolidação foi concluída: o repositório duplicado foi excluído. Todo o 
 - `data/item-assets.json`: nomes, imagens e fontes dos itens dos 16 conjuntos.
 - `data/unit-assets.json`: catálogo das aparências principais e skins dos 52 personagens.
 - `data/unit-profiles.json`: classes, vantagens e resumos em inglês das unidades.
+- `data/unit-costs.json`: custos-base de envio, recurso usado, fontes e data da verificação dos 52 personagens.
 - `data/team-assets.json`: Teams, emblemas, bônus e afiliação de cada skin.
 - `data/team-bonuses.json`: explicações revisadas dos bônus dos Teams.
 - `assets/units`: sprites exatos dos personagens, organizados por unidade.
 - `assets/classes` e `assets/perks`: escudos de classe e ícones de vantagens.
+- `assets/resources`: ícones exatos de Courage e Rage.
 - `assets/teams`: 18 emblemas correspondentes aos Teams do jogo.
 - `assets/items`: 64 sprites de itens organizados por conjunto e tipo.
 - `assets/branding`: ícone e arte de cabeçalho do jogo.
 - `scripts/sync-item-assets.mjs`: sincroniza os sprites a partir da wiki do jogo.
 - `scripts/sync-unit-assets.mjs`: sincroniza personagens e skins a partir da wiki do jogo.
 - `scripts/sync-unit-profiles.mjs`: sincroniza classes, vantagens e resumos das unidades.
+- `scripts/sync-unit-costs.mjs`: verifica os custos nas páginas individuais das unidades e atualiza os ícones de recursos. Use `--refresh` para ignorar o cache local de 24 horas.
 - `scripts/sync-team-assets.mjs`: sincroniza emblemas e afiliações das skins e verifica as páginas dos Teams.
 - `scripts/translate-builds-to-english.mjs`: padroniza os dados das builds em inglês.
+- `tests/unit-costs.test.mjs`: testes do parser, cobertura dos 52 custos e integridade dos ícones; execute `node --test tests/unit-costs.test.mjs`.
 - `downloads`: versão completa da planilha Excel.
 
 ## Atualização local

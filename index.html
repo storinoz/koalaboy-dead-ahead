@@ -18,7 +18,7 @@
         document.documentElement.dataset.theme = "dark";
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=13">
+    <link rel="stylesheet" href="styles.css?v=14">
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
@@ -88,6 +88,10 @@
                   <div class="class-badge">
                     <img id="classIcon" src="" alt="" width="42" height="42">
                     <span><small>Class</small><strong id="className"></strong></span>
+                  </div>
+                  <div class="unit-cost" id="unitCost" role="group" hidden>
+                    <img id="costIcon" src="" alt="" width="28" height="32">
+                    <span><small>Cost</small><strong id="costAmount"></strong></span>
                   </div>
                 </div>
                 <div class="perk-list" id="perkList" aria-label="Unit perks"></div>
@@ -216,6 +220,6 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <div class="team-tooltip" id="teamTooltip" role="tooltip" hidden></div>
-    <script src="app.js?v=9" defer></script>
+    <script src="app.js?v=14" defer></script>
   </body>
 </html>

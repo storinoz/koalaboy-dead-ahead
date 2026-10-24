@@ -241,6 +241,12 @@ kbd { padding: 1px 6px; border: 1px solid #3c4437; border-radius: 5px; backgroun
 .class-badge img { width: 42px; height: 42px; object-fit: contain; image-rendering: pixelated; }
 .class-badge small { display: block; color: #858b7e; font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
 .class-badge strong { display: block; color: #f4e6bb; font-family: "Barlow Condensed", Impact, sans-serif; font-size: 19px; line-height: 1.1; text-transform: uppercase; }
+.unit-cost { min-height: 54px; display: inline-grid; grid-template-columns: 28px auto; align-items: center; gap: 8px; padding: 6px 12px 6px 8px; border: 1px solid #3b667a; border-radius: 12px; background: rgba(71, 160, 202, 0.09); }
+.unit-cost img { width: 28px; height: 32px; object-fit: contain; image-rendering: pixelated; }
+.unit-cost small { display: block; color: #9bb2bd; font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.unit-cost strong { display: block; color: #b9e7ff; font-family: "Barlow Condensed", Impact, sans-serif; font-size: 23px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.unit-cost[data-resource="rage"] { border-color: #805440; background: rgba(197, 86, 52, 0.09); }
+.unit-cost[data-resource="rage"] strong { color: #ffd0b1; }
 .perk-list { min-height: 46px; display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
 .perk-badge { position: relative; width: 42px; height: 42px; display: grid; place-items: center; padding: 0; border: 1px solid var(--line-strong); border-radius: 10px; background: rgba(15, 18, 14, 0.78); cursor: help; }
 .perk-badge img { width: 34px; height: 34px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35)); }
@@ -387,6 +393,11 @@ html[data-theme="light"] .team-tooltip { border-color: #9b7a31; background: #fff
 html[data-theme="light"] .team-tooltip-title { color: #65470b; }
 html[data-theme="light"] .class-badge small { color: #6d7168; }
 html[data-theme="light"] .class-badge strong { color: #5f450d; }
+html[data-theme="light"] .unit-cost { border-color: #7196aa; background: rgba(68, 143, 180, 0.1); }
+html[data-theme="light"] .unit-cost small { color: #506979; }
+html[data-theme="light"] .unit-cost strong { color: #205e83; }
+html[data-theme="light"] .unit-cost[data-resource="rage"] { border-color: #b57c64; background: rgba(197, 86, 52, 0.08); }
+html[data-theme="light"] .unit-cost[data-resource="rage"] strong { color: #843a18; }
 html[data-theme="light"] .perk-badge { background: rgba(250, 246, 236, 0.92); }
 html[data-theme="light"] .perk-tooltip { border-color: #9b7a31; background: #fffaf0; color: #30342c; box-shadow: 0 12px 28px rgba(63, 53, 35, 0.22); }
 html[data-theme="light"] .perk-tooltip strong { color: #65470b; }
